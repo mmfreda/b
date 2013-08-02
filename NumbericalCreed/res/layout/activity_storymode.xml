@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_match_parent"
+    android:background="@drawable/pic_welcome"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        style="@style/layout_match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="1.8" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="1"
+            android:weightSum="3" >
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <Button
+                            android:id="@+id/btn_story"
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8"
+                            android:background="@drawable/selector_btn_orange"
+                            android:gravity="center"
+                            android:onClick="enterStoryMode"
+                            android:text="剧情模式"
+                            android:textSize="24dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <Button
+                            android:id="@+id/btn_challenge"
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8"
+                            android:background="@drawable/selector_btn_gray"
+                            android:gravity="center"
+                            android:onClick="enterChallengeMode"
+                            android:text="挑战模式"
+                            android:textSize="24dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <Button
+                            android:id="@+id/btn_recovery"
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8"
+                            android:background="@drawable/selector_btn_small"
+                            android:gravity="center"
+                            android:onClick="enterRecoveryWorkShop"
+                            android:text="修复车间"
+                            android:textSize="24dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="0.2" >
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

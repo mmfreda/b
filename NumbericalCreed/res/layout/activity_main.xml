@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_match_parent"
+    android:background="@drawable/pic_welcome"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        style="@style/layout_match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:weightSum="3" >
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="1.8"
+            android:weightSum="100" >
+
+            <LinearLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="10" >
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="30" >
+
+                <ImageView
+                    style="@style/layout_wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_setting" />
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="20" >
+            </LinearLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="30" >
+
+                <ImageView
+                    style="@style/layout_wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_info" />
+            </FrameLayout>
+
+            <LinearLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="10" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="1"
+            android:weightSum="3" >
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <Button
+                            android:id="@+id/btn_story"
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8"
+                            android:background="@drawable/selector_btn_orange"
+                            android:gravity="center"
+                            android:onClick="enterStoryMode"
+                            android:text="剧情模式"
+                            android:textSize="@dimen/textsize_main" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <FrameLayout
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8" >
+
+                            <Button
+                                android:id="@+id/btn_challenge"
+                                style="@style/layout_match_parent"
+                                android:layout_weight="8"
+                                android:background="@drawable/selector_btn_orange"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:onClick="enterChallengeMode"
+                                android:text="挑战模式"
+                                android:textSize="@dimen/textsize_main" />
+
+                            <ImageView
+                                style="@style/layout_wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:background="@drawable/ic_lock_right_bottom" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                style="@style/layout_weight_horizontal"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    style="@style/layout_match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="2" >
+
+                    <LinearLayout
+                        style="@style/layout_weight_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:weightSum="10" >
+
+                        <FrameLayout
+                            style="@style/layout_weight_horizontal"
+                            android:layout_weight="8" >
+
+                            <Button
+                                android:id="@+id/btn_recovery"
+                                style="@style/layout_match_parent"
+                                android:background="@drawable/selector_btn_orange"
+                                android:enabled="false"
+                                android:gravity="center"
+                                android:onClick="enterRecoveryWorkShop"
+                                android:text="修复车间"
+                                android:textSize="@dimen/textsize_main" />
+
+                            <ImageView
+                                style="@style/layout_wrap_content"
+                                android:layout_gravity="center_vertical|right"
+                                android:background="@drawable/ic_lock_right_bottom" />
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_weight_vertical"
+            android:layout_weight="0.2" >
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

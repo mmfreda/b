@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="activity_background">#FFB0B0B0</color>
+    <color name="item_bkg_lightgray">#FFDFDFDF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="btn_orange_normal">#FFFF6501</color>
+    <color name="btn_orange_pressed">#FFA7714D</color>
+    <color name="btn_gray_normal">#FF999599</color>
+    <color name="btn_gray_pressed">#FF5F5B5F</color>
+    <color name="btn_disabled">#FF999599</color>
+    <color name="bkg_input_focus">#FFFAEED4</color>
+
+</resources>

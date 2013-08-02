@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="layout_match_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_weight_horizontal">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_weight_vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dip</item>
+    </style>
+
+    <style name="layout_wrap_width">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="layout_wrap_height">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>
