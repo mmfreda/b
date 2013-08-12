@@ -3,32 +3,31 @@ package com.creed.numberical;
 import android.app.Application;
 
 /**
- * ClassName:	NumbericalCreedApplication
- * Function: 	Êý×ÖÐÅÌõ³ÌÐòÀà
- * @author   	Norris		Norris.sly@gmail.com
- * @version  	
- * @since   	Ver 1.0		I used to be a programmer like you, then I took an arrow in the knee 
- * @Date	 	2013		2013-7-23		ÏÂÎç1:18:59 
- * @see 	 	
+ * ClassName: NumbericalCreedApplication Function: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @author Norris Norris.sly@gmail.com
+ * @version
+ * @since Ver 1.0 I used to be a programmer like you, then I took an arrow in the knee
+ * @Date 2013 2013-7-23 ï¿½ï¿½ï¿½ï¿½1:18:59
+ * @see
  */
 public class NumbericalCreedApplication extends Application
 {
 
 	/**
-	 * 	(non-Javadoc)
-	 * 	@see android.app.Application#onCreate()
+	 * (non-Javadoc)
+	 * @see android.app.Application#onCreate()
 	 */
 	@Override
 	public void onCreate()
 	{
 		super.onCreate();
-
+		//
 	}
 
 
 	/**
-	 * 	(non-Javadoc)
-	 * 	@see android.app.Application#onTerminate()
+	 * (non-Javadoc)
+	 * @see android.app.Application#onTerminate()
 	 */
 	@Override
 	public void onTerminate()
@@ -40,8 +39,8 @@ public class NumbericalCreedApplication extends Application
 
 
 	/**
-	 * 	(non-Javadoc)
-	 * 	@see android.app.Application#onLowMemory()
+	 * (non-Javadoc)
+	 * @see android.app.Application#onLowMemory()
 	 */
 	@Override
 	public void onLowMemory()
